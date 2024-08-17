@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctvs7f0xmeijt"]
+
+[ext_resource type="Script" path="res://PlayerNPCsAndSuch/kaiju.gd" id="1_2c3hp"]
+[ext_resource type="Texture2D" uid="uid://bubay7in6mt5u" path="res://Assets/Art/gmtk-2024-chibi.png" id="1_h6uq0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hc5m"]
+size = Vector2(18, 17)
+
+[node name="Chibi" type="CharacterBody2D"]
+script = ExtResource("1_2c3hp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h6uq0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 7.5)
+shape = SubResource("RectangleShape2D_3hc5m")
